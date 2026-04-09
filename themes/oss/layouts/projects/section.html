@@ -1,0 +1,83 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<section class="section section_hero">
+  <div class="wrapper">
+    <div class="content">
+      <h1>Our Projects</h1>
+      <p class="subtitle">Critical PostgreSQL tooling, professionally maintained</p>
+      <p>We maintain a focused selection of open source tools that address core PostgreSQL operational needs: migrations, data movement, and high availability. Each project is production-proven, widely adopted, and backed by dedicated maintenance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section_projects">
+  <div class="wrapper">
+    <div class="content">
+      <div class="projects_grid">
+        <div class="project_card">
+          <h3>pgloader</h3>
+          <p class="project_subtitle">Database Migration Tool</p>
+          <p>pgloader loads data from various sources into PostgreSQL. It supports MySQL, SQLite, MSSQL, Oracle, and more—with automatic schema conversion and high-performance parallel loading.</p>
+          <ul class="project_features">
+            <li>Multi-source database migration</li>
+            <li>Automatic schema conversion</li>
+            <li>High-performance parallel loading</li>
+            <li>Data type transformation</li>
+          </ul>
+          <div class="project_links">
+            <a href="/pgloader/" class="btn">Details</a>
+            <a href="https://github.com/dimitri/pgloader" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project_card">
+          <h3>pgcopydb</h3>
+          <p class="project_subtitle">Database Copy Tool</p>
+          <p>pgcopydb copies a PostgreSQL database to a target server with minimal downtime. It uses logical replication for live copies and supports large databases.</p>
+          <ul class="project_features">
+            <li>Live database cloning</li>
+            <li>Logical replication support</li>
+            <li>Minimal downtime migration</li>
+            <li>PostgreSQL version upgrade</li>
+          </ul>
+          <div class="project_links">
+            <a href="/pgcopydb/" class="btn">Details</a>
+            <a href="https://github.com/dimitri/pgcopydb" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project_card">
+          <h3>pg_auto_failover</h3>
+          <p class="project_subtitle">High Availability Manager</p>
+          <p>pg_auto_failover monitors PostgreSQL and automatically manages failover to maintain high availability. Built on PostgreSQL native features.</p>
+          <ul class="project_features">
+            <li>Automatic failover</li>
+            <li>Zero data loss</li>
+            <li>PostgreSQL native design</li>
+            <li>Simple orchestration</li>
+          </ul>
+          <div class="project_links">
+            <a href="/pg_auto_failover/" class="btn">Details</a>
+            <a href="https://github.com/hapostgres/pg_auto_failover" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_cta">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Support these projects</h2>
+      <p>Get priority access, predictable releases, and direct support.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">Subscribe</a>
+        <a href="/partner/" class="btn btn-secondary">Become a Partner</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

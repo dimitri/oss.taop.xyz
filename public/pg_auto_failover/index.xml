@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pg_auto_failover - High Availability Manager on Open Source Software Maintenance</title>
+    <link>https://oss.taop.xyz/pg_auto_failover/</link>
+    <description>Recent content in pg_auto_failover - High Availability Manager on Open Source Software Maintenance</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://oss.taop.xyz/pg_auto_failover/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

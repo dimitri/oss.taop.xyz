@@ -1,0 +1,11 @@
+baseURL = 'https://oss.taop.xyz/'
+locale = 'en-us'
+title = 'Open Source Software Maintenance'
+theme = "oss"
+
+[markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  description = "Open Source Software maintenance contributions for reliability, accountability, and independent project steering"
