@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oss.taop.xyz/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/partner/</loc>
+    <loc>http://localhost:1313/partner/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/pg_auto_failover/</loc>
+    <loc>http://localhost:1313/pg_auto_failover/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/pgcopydb/</loc>
+    <loc>http://localhost:1313/pgcopydb/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/pgloader/</loc>
+    <loc>http://localhost:1313/pgloader/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/roadmap/</loc>
+    <loc>http://localhost:1313/roadmap/</loc>
   </url><url>
-    <loc>https://oss.taop.xyz/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

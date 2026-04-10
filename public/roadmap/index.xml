@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roadmap on Open Source Software Maintenance</title>
-    <link>https://oss.taop.xyz/roadmap/</link>
+    <link>http://localhost:1313/roadmap/</link>
     <description>Recent content in Roadmap on Open Source Software Maintenance</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://oss.taop.xyz/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/roadmap/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
