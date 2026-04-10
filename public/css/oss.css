@@ -225,8 +225,74 @@ body.oss .section_maintenance {
   background: #fff;
 }
 
-body.oss .section_what,
-body.oss .section_how,
+body.oss .section_meaning {
+  background: #f9f9f9;
+}
+
+body.oss .section_themes {
+  background: #fff;
+}
+
+body.oss .themes_table {
+  margin-top: 40px;
+  width: 100%;
+}
+
+body.oss .themes_row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.3fr 2.5fr;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+body.oss .themes_row.project_transition {
+  border-bottom: 3px solid #eee;
+}
+
+body.oss .themes_row.header {
+  font-weight: 700;
+  background: #372649;
+  padding: 15px 20px;
+  border-radius: 4px 4px 0 0;
+}
+
+body.oss .themes_row.header .col {
+  font: 700 14px 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+body.oss .themes_row .col {
+  font: 400 14px 'Lato', sans-serif;
+  color: #67527a;
+  text-align: left;
+}
+
+body.oss .priority_list {
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+
+body.oss .priority_list li {
+  font: 400 18px/1.8 'Lato', sans-serif;
+  color: #67527a;
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+body.oss .priority_list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #67527a;
+}
 body.oss .section_benefits {
   background: #fff;
 }
@@ -813,6 +879,26 @@ body.oss .faq_list dd:last-child {
   body.oss .value_props {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  
+  body.oss .themes_table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  body.oss .themes_row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  body.oss .themes_row.header {
+    display: none;
   }
 }
 }
