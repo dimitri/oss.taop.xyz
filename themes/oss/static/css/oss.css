@@ -52,8 +52,8 @@ body.oss .section p {
 
 /* Hero Section */
 body.oss .section_hero {
-  background: #181224;
-  padding: 120px 0;
+  background: #fff;
+  padding: 80px 0;
 }
 
 body.oss .section_hero .content {
@@ -62,22 +62,23 @@ body.oss .section_hero .content {
   text-align: center;
 }
 
-body.oss .section_hero h1 {
+body.oss .section_hero h1,
+body.oss .section_hero h2 {
   font: 500 48px 'Bookman', serif;
-  color: #fff;
+  color: #67527a;
   padding-bottom: 20px;
   margin-bottom: 10px;
 }
 
 body.oss .section_hero .subtitle {
   font: 300 24px 'Lato', sans-serif;
-  color: #ccc;
+  color: #67527a;
   margin-bottom: 30px;
 }
 
 body.oss .section_hero p {
   font: 400 18px/1.6 'Lato', sans-serif;
-  color: #ccc;
+  color: #67527a;
   margin-bottom: 20px;
 }
 
@@ -94,13 +95,13 @@ body.oss .section_hero .btn-primary:hover {
 
 body.oss .section_hero .btn-secondary {
   background: transparent;
-  color: #ccc;
-  border: 2px solid #ccc;
+  color: #67527a;
+  border: 2px solid #67527a;
 }
 
 body.oss .section_hero .btn-secondary:hover {
-  background: #ccc;
-  color: #181224;
+  background: #67527a;
+  color: #fff;
 }
 
 /* Alternate section backgrounds */
@@ -142,8 +143,19 @@ body.oss .section_how {
   background: #f9f9f9;
 }
 
-body.oss .section_hero {
-  background: #fff;
+body.oss .section_hero h1,
+body.oss .section_hero h2,
+body.oss .section_hero .subtitle,
+body.oss .section_hero p {
+  color: #67527a;
+}
+
+body.oss .section_hero .subtitle {
+  color: #67527a;
+}
+
+body.oss .section_hero p {
+  color: #67527a;
 }
 
 body.oss .section_hero_dark {
@@ -156,7 +168,11 @@ body.oss .section_hero_dark p {
   color: #fff;
 }
 
-body.oss .section_ecosystem {
+body.oss .section_prioritized {
+  background: #fff;
+}
+
+body.oss .section_works {
   background: #fff;
 }
 
