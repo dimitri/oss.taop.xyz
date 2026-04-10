@@ -2,6 +2,7 @@ baseURL = 'https://oss.taop.xyz/'
 locale = 'en-us'
 title = 'Open Source Software Maintenance'
 theme = "oss"
+publishDir = "docs"
 
 [markup.goldmark]
   [markup.goldmark.renderer]
