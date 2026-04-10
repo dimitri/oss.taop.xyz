@@ -1,0 +1,116 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<section class="section section_problem">
+  <div class="wrapper">
+    <div class="content">
+      <h1>pgcopydb</h1>
+      <p class="subtitle">Copy PostgreSQL databases with minimal downtime</p>
+      <p>pgcopydb copies PostgreSQL databases to a target server with minimal downtime. It uses logical replication and incremental copy to handle large databases efficiently.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
+        <a href="https://github.com/dimitri/pgcopydb" class="btn btn-secondary" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_solution">
+  <div class="wrapper">
+    <div class="content">
+      <h2>What pgcopydb does</h2>
+      <p class="subtitle">Live database cloning with logical replication</p>
+      <p>pgcopydb copies a PostgreSQL database from source to target while the source remains online. It uses logical replication to keep the target in sync and only requires a short maintenance window for final switchover.</p>
+      
+      <div class="value_props">
+        <div class="value_prop">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3>Why it matters</h3>
+          <p class="subtitle">Database migrations are complex and risky</p>
+          <ul class="use_cases_list">
+            <li>Copying large production databases is challenging</li>
+            <li>pg_dump and pg_restore cause significant downtime</li>
+            <li>pgcopydb minimizes that downtime</li>
+            <li>Handles edge cases like large objects, sequences, and indexes</li>
+          </ul>
+        </div>
+        <div class="value_prop">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>Typical use cases</h3>
+          <p class="subtitle">Where pgcopydb fits</p>
+          <ul class="use_cases_list">
+            <li>PostgreSQL version upgrades with minimal downtime</li>
+            <li>Cloud migrations from on-premise</li>
+            <li>Creating read replicas</li>
+            <li>Database cloning for testing and development</li>
+          </ul>
+        </div>
+        <div class="value_prop">
+          <i class="fa-solid fa-bolt"></i>
+          <h3>Key capabilities</h3>
+          <p class="subtitle">Built for production databases</p>
+          <ul class="capabilities_list">
+            <li>Logical replication for live copies</li>
+            <li>Incremental copy of changed data</li>
+            <li>Table and schema filtering</li>
+            <li>Large object support</li>
+            <li>Indexes and constraints recreation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_focus">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Current focus</h2>
+      <p class="subtitle">Active maintenance areas</p>
+      <p>Current work focuses on improving logical replication performance, handling more data types, better progress tracking, and PostgreSQL version compatibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section_how">
+  <div class="wrapper">
+    <div class="content">
+      <h2>How maintenance works</h2>
+      <p class="subtitle">Queue, SLA, quarterly releases</p>
+      <p>Work is prioritized through a queue. Supported users receive priority handling, with defined response times. Fixes and improvements are grouped and shipped in quarterly releases.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">See support options</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_get">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Get pgcopydb</h2>
+      <p class="subtitle">Open source and available now</p>
+      <p>pgcopydb is open source and developed in public.</p>
+      <div class="buttons">
+        <a href="https://github.com/dimitri/pgcopydb" class="btn btn-secondary" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_support">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Support pgcopydb</h2>
+      <p class="subtitle">Keep database copies reliable</p>
+      <p>If pgcopydb is part of your migration workflow, supporting its maintenance ensures faster fixes, continued compatibility, and long-term reliability.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "ecosystem.html" . }}
+
+{{ partial "footer.html" . }}

@@ -124,6 +124,42 @@ body.oss .section_why {
   background: #fff;
 }
 
+body.oss .section_usecases,
+body.oss .section_capabilities,
+body.oss .section_support {
+  background: #f9f9f9;
+}
+
+body.oss .section_get {
+  background: #fff;
+}
+
+body.oss .section_focus {
+  background: #fff;
+}
+
+body.oss .section_how {
+  background: #f9f9f9;
+}
+
+body.oss .section_hero {
+  background: #fff;
+}
+
+body.oss .section_hero_dark {
+  background: #372649;
+}
+
+body.oss .section_hero_dark h1,
+body.oss .section_hero_dark .subtitle,
+body.oss .section_hero_dark p {
+  color: #fff;
+}
+
+body.oss .section_ecosystem {
+  background: #fff;
+}
+
 body.oss .section_solution .subtitle {
   font: 300 20px 'Lato', sans-serif;
   color: #67527a;
@@ -293,6 +329,33 @@ body.oss .priority_list li:before {
   left: 0;
   color: #67527a;
 }
+
+body.oss .use_cases_list,
+body.oss .capabilities_list {
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+
+body.oss .use_cases_list li,
+body.oss .capabilities_list li {
+  font: 400 18px/1.8 'Lato', sans-serif;
+  color: #67527a;
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+body.oss .use_cases_list li:before,
+body.oss .capabilities_list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #67527a;
+}
+
 body.oss .section_benefits {
   background: #fff;
 }
@@ -736,7 +799,7 @@ body.oss .proof_note {
 
 /* How It Works Blocks */
 body.oss .section_how {
-  background: #fff;
+  background: #f9f9f9;
 }
 
 body.oss .how_blocks {

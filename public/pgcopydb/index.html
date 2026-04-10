@@ -50,53 +50,145 @@
 </header>
 
 
-<section class="single_section">
+<section class="section section_problem">
   <div class="wrapper">
-    <div class="single_block">
-      <h1>pgcopydb - Database Copy Tool</h1>
-      <div class="project_header">
-  <h2>Copy PostgreSQL Databases with Minimal Downtime</h2>
-  <p class="project_description">pgcopydb copies a PostgreSQL database to a target server. It uses logical replication for live copies and supports large databases with minimal downtime.</p>
-  <div class="project_links">
-    <a href="https://github.com/dimitri/pgcopydb" class="btn" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-    <a href="https://pgcopydb.org" class="btn" target="_blank"><i class="fa-solid fa-globe"></i> Documentation</a>
+    <div class="content">
+      <h1>pgcopydb</h1>
+      <p class="subtitle">Copy PostgreSQL databases with minimal downtime</p>
+      <p>pgcopydb copies PostgreSQL databases to a target server with minimal downtime. It uses logical replication and incremental copy to handle large databases efficiently.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
+        <a href="https://github.com/dimitri/pgcopydb" class="btn btn-secondary" target="_blank">View on GitHub</a>
+      </div>
+    </div>
   </div>
-</div>
-<div class="project_content">
-  <h3>Overview</h3>
-  <p>pgcopydb is a tool that helps you copy a PostgreSQL database from one server to another. Unlike simple pg_dump/pg_restore, pgcopydb is designed for production use with features like live replication and incremental copy.</p>
-  <h3>Key Features</h3>
-  <ul>
-    <li><strong>Live database cloning:</strong> Copy data while the source database is online</li>
-    <li><strong>Logical replication:</strong> Uses PostgreSQL's logical replication for efficiency</li>
-    <li><strong>Minimal downtime:</strong> Only a short maintenance window needed</li>
-    <li><strong>Large database support:</strong> Handles databases of any size</li>
-    <li><strong>Table filtering:</strong> Copy only specific tables or schemas</li>
-  </ul>
-  <h3>Use Cases</h3>
-  <ul>
-    <li>Database migration to a new server</li>
-    <li>Creating read replicas</li>
-    <li>Database cloning for testing</li>
-    <li>Upgrading to a new PostgreSQL version</li>
-    <li>Moving to cloud PostgreSQL</li>
-  </ul>
-  <h3>Installation</h3>
-  <pre><code># From source
-git clone https://github.com/dimitri/pgcopydb.git
-cd pgcopydb
-make</code></pre>
-  <p>pgcopydb is also available as a Docker image:</p>
-  <pre><code>docker pull dimitri/pgcopydb</code></pre>
-  <h3>Quick Example</h3>
-  <pre><code>pgcopydb copy --source "postgres://source:5432/db" --target "postgres://target:5432/db"</code></pre>
-  <h3>Support Options</h3>
-  <p>Get professional support and maintenance for pgcopydb in your production environment.</p>
-  <div class="support_cta">
-    <a href="#subscribe" class="btn">Subscribe to Maintenance</a>
-  </div>
-</div>
+</section>
 
+<section class="section section_solution">
+  <div class="wrapper">
+    <div class="content">
+      <h2>What pgcopydb does</h2>
+      <p class="subtitle">Live database cloning with logical replication</p>
+      <p>pgcopydb copies a PostgreSQL database from source to target while the source remains online. It uses logical replication to keep the target in sync and only requires a short maintenance window for final switchover.</p>
+      
+      <div class="value_props">
+        <div class="value_prop">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3>Why it matters</h3>
+          <p class="subtitle">Database migrations are complex and risky</p>
+          <ul class="use_cases_list">
+            <li>Copying large production databases is challenging</li>
+            <li>pg_dump and pg_restore cause significant downtime</li>
+            <li>pgcopydb minimizes that downtime</li>
+            <li>Handles edge cases like large objects, sequences, and indexes</li>
+          </ul>
+        </div>
+        <div class="value_prop">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>Typical use cases</h3>
+          <p class="subtitle">Where pgcopydb fits</p>
+          <ul class="use_cases_list">
+            <li>PostgreSQL version upgrades with minimal downtime</li>
+            <li>Cloud migrations from on-premise</li>
+            <li>Creating read replicas</li>
+            <li>Database cloning for testing and development</li>
+          </ul>
+        </div>
+        <div class="value_prop">
+          <i class="fa-solid fa-bolt"></i>
+          <h3>Key capabilities</h3>
+          <p class="subtitle">Built for production databases</p>
+          <ul class="capabilities_list">
+            <li>Logical replication for live copies</li>
+            <li>Incremental copy of changed data</li>
+            <li>Table and schema filtering</li>
+            <li>Large object support</li>
+            <li>Indexes and constraints recreation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_focus">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Current focus</h2>
+      <p class="subtitle">Active maintenance areas</p>
+      <p>Current work focuses on improving logical replication performance, handling more data types, better progress tracking, and PostgreSQL version compatibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section_how">
+  <div class="wrapper">
+    <div class="content">
+      <h2>How maintenance works</h2>
+      <p class="subtitle">Queue, SLA, quarterly releases</p>
+      <p>Work is prioritized through a queue. Supported users receive priority handling, with defined response times. Fixes and improvements are grouped and shipped in quarterly releases.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">See support options</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_get">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Get pgcopydb</h2>
+      <p class="subtitle">Open source and available now</p>
+      <p>pgcopydb is open source and developed in public.</p>
+      <div class="buttons">
+        <a href="https://github.com/dimitri/pgcopydb" class="btn btn-secondary" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_support">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Support pgcopydb</h2>
+      <p class="subtitle">Keep database copies reliable</p>
+      <p>If pgcopydb is part of your migration workflow, supporting its maintenance ensures faster fixes, continued compatibility, and long-term reliability.</p>
+      <div class="buttons">
+        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section_ecosystem">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Get the most out of PostgreSQL in production</h2>
+      <p class="subtitle">Sharpen your skills, improve reliability, move faster</p>
+      <p>If you run PostgreSQL in production, the difference is not just tooling—it's how well you use it. Query design, data modeling, migrations, and performance tuning directly impact reliability and delivery speed.</p>
+      <p>We provide a complete, structured program to help you level up: from fundamentals to advanced production patterns, with practical, hands-on material you can apply immediately.</p>
+      <div class="ecosystem_grid">
+        <a href="https://theartofpostgresql.com/book/" class="ecosystem_card">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Book</h3>
+          <p>Master SQL and PostgreSQL fundamentals</p>
+        </a>
+        <a href="https://theartofpostgresql.com/course/" class="ecosystem_card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Course</h3>
+          <p>Structured learning with real-world patterns</p>
+        </a>
+        <a href="https://theartofpostgresql.com/workshop/" class="ecosystem_card">
+          <i class="fa-solid fa-microphone"></i>
+          <h3>Workshop</h3>
+          <p>Hands-on, team-focused training</p>
+        </a>
+        <a href="https://lab.taop.xyz/" class="ecosystem_card">
+          <i class="fa-solid fa-flask"></i>
+          <h3>Lab</h3>
+          <p>Practice with realistic datasets and exercises</p>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -141,4 +233,3 @@ make</code></pre>
 </body>
 
 </html>
-
