@@ -1,27 +1,11 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
-<section class="section section_hero_dark">
-  <div class="wrapper">
-    <div class="content">
-      <h1>Partner Program</h1>
-      <p class="subtitle">Build on a reliable upstream</p>
-      <p>Join a structured partner program designed for consultancies delivering PostgreSQL in production. Get priority access, predictable upstream support, and visible credibility—without meetings or overhead.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section section_hero">
-  <div class="wrapper">
-    <div class="content">
-      <h2>PostgreSQL adoption continues to accelerate</h2>
-      <div class="two_col_text">
-        <p>And with it the need for reliable, repeatable tooling around migrations, data movement, and high availability. Tools such as pgloader, pgcopydb, and pg_auto_failover are already used in production across a wide range of environments—but like most open source infrastructure, their effectiveness depends on timely fixes, predictable releases, and clear operational guarantees.</p>
-        <p>The Partner Program is designed to provide exactly that: a direct, structured path between your delivery teams and upstream maintenance, ensuring that the tools you rely on behave as expected when it matters.</p>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "partner/partner-hero.html" . }}
+
+{{ partial "partner/partner-intro.html" . }}
+
 
 <section class="section section_solution">
   <div class="wrapper">
@@ -53,6 +37,7 @@
     </div>
   </div>
 </section>
+
 
 <section id="tiers" class="section section_what">
   <div class="wrapper">
@@ -116,6 +101,7 @@
   </div>
 </section>
 
+
 <section class="section section_why">
   <div class="wrapper">
     <div class="content">
@@ -124,6 +110,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="section section_benefits">
   <div class="wrapper">
@@ -161,6 +148,7 @@
   </div>
 </section>
 
+
 <section class="section section_cta">
   <div class="wrapper">
     <div class="content">
@@ -172,5 +160,6 @@
     </div>
   </div>
 </section>
+
 
 {{ partial "footer.html" . }}

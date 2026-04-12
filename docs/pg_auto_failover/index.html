@@ -50,146 +50,55 @@
 </header>
 
 
-<section class="section section_hero_dark">
+<section class="single_section">
   <div class="wrapper">
-    <div class="content">
-      <h1>pg_auto_failover</h1>
-      <p class="subtitle">Automatic failover for PostgreSQL</p>
-      <p>pg_auto_failover monitors PostgreSQL and automatically manages failover to maintain high availability. Built on PostgreSQL native features for zero data loss.</p>
-      <div class="buttons">
-        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
-        <a href="https://github.com/hapostgres/pg_auto_failover" class="btn btn-secondary" target="_blank">View on GitHub</a>
-      </div>
-    </div>
+    <div class="single_block">
+      <h1>pg_auto_failover - High Availability Manager</h1>
+      <div class="project_header">
+  <h2>Automatic Failover for PostgreSQL</h2>
+  <p class="project_description">pg_auto_failover monitors PostgreSQL databases and automatically manages failover to maintain high availability. Built on PostgreSQL native features for zero data loss.</p>
+  <div class="project_links">
+    <a href="https://github.com/hapostgres/pg_auto_failover" class="btn" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="https://pg-auto-failover.readthedocs.io" class="btn" target="_blank"><i class="fa-solid fa-globe"></i> Documentation</a>
   </div>
-</section>
-
-<section class="section section_solution">
-  <div class="wrapper">
-    <div class="content">
-      <h2>What pg_auto_failover does</h2>
-      <p class="subtitle">High availability built on PostgreSQL</p>
-      <p>pg_auto_failover is a service that monitors and manages failover for PostgreSQL. It coordinates replication between primary and standby nodes and automatically promotes a standby when the primary fails.</p>
-      
-      <div class="value_props">
-        <div class="value_prop">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          <h3>Why it matters</h3>
-          <p class="subtitle">Availability matters in production</p>
-          <ul class="use_cases_list">
-            <li>PostgreSQL's streaming replication is robust</li>
-            <li>Managing failover manually is error-prone</li>
-            <li>pg_auto_failover automates the entire process</li>
-            <li>Maintains zero data loss through synchronous replication</li>
-          </ul>
-        </div>
-        <div class="value_prop">
-          <i class="fa-solid fa-list-check"></i>
-          <h3>Typical use cases</h3>
-          <p class="subtitle">Where pg_auto_failover fits</p>
-          <ul class="use_cases_list">
-            <li>Multi-node HA clusters</li>
-            <li>Zero-downtime maintenance</li>
-            <li>Cloud-native deployments</li>
-            <li>Compliance-driven HA requirements</li>
-          </ul>
-        </div>
-        <div class="value_prop">
-          <i class="fa-solid fa-bolt"></i>
-          <h3>Key capabilities</h3>
-          <p class="subtitle">Built on PostgreSQL native features</p>
-          <ul class="capabilities_list">
-            <li>Automatic failover with zero data loss</li>
-            <li>Synchronous replication</li>
-            <li>Health monitoring for primary and standby</li>
-            <li>Simple setup and maintenance</li>
-            <li>PostgreSQL native streaming replication</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+</div>
+<div class="project_content">
+  <h3>Overview</h3>
+  <p>pg_auto_failover is a service that monitors and manages failover for PostgreSQL. It coordinates replication between primary and secondary nodes and automatically promotes a standby when the primary fails.</p>
+  <h3>Key Features</h3>
+  <ul>
+    <li><strong>Automatic failover:</strong> No manual intervention needed when primary fails</li>
+    <li><strong>Zero data loss:</strong> Uses synchronous replication to ensure no data is lost</li>
+    <li><strong>PostgreSQL native:</strong> Built on PostgreSQL's native streaming replication</li>
+    <li><strong>Simple configuration:</strong> Easy to set up and maintain</li>
+    <li><strong>Health monitoring:</strong> Continuous monitoring of both primary and standby</li>
+  </ul>
+  <h3>Architecture</h3>
+  <ul>
+    <li>PostgreSQL primary node</li>
+    <li>PostgreSQL standby node(s)</li>
+    <li>pg_auto_failover monitor (single node or cluster)</li>
+    <li>Automatic promotion of standby on primary failure</li>
+  </ul>
+  <h3>Installation</h3>
+  <pre><code># From source
+git clone https://github.com/hapostgres/pg_auto_failover.git
+cd pg_auto_failover
+make</code></pre>
+  <p>pg_auto_failover is also available as a package in many distributions.</p>
+  <h3>Quick Example</h3>
+  <pre><code># Create a formation
+pg_autoctl create formation --formation ha --kind postgres --num-sync-standby 1
+<h1 id="add-nodes">Add nodes</h1>
+<p>pg_autoctl create node &ndash;hostname node1 &ndash;name node1
+pg_autoctl create node &ndash;hostname node2 &ndash;name node2</code></pre></p>
+  <h3>Support Options</h3>
+  <p>Get professional support and maintenance for pg_auto_failover in your production environment.</p>
+  <div class="support_cta">
+    <a href="#subscribe" class="btn">Subscribe to Maintenance</a>
   </div>
-</section>
+</div>
 
-<section class="section section_focus">
-  <div class="wrapper">
-    <div class="content">
-      <h2>Current focus</h2>
-      <p class="subtitle">Active maintenance areas</p>
-      <p>Current work focuses on improving failover speed, better monitoring and metrics, multi-standby configurations, and PostgreSQL version compatibility.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section section_how">
-  <div class="wrapper">
-    <div class="content">
-      <h2>How maintenance works</h2>
-      <p class="subtitle">Queue, SLA, quarterly releases</p>
-      <p>Work is prioritized through a queue. Supported users receive priority handling, with defined response times. Fixes and improvements are grouped and shipped in quarterly releases.</p>
-      <div class="buttons">
-        <a href="/#pricing" class="btn btn-primary">See support options</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section_get">
-  <div class="wrapper">
-    <div class="content">
-      <h2>Get pg_auto_failover</h2>
-      <p class="subtitle">Open source and available now</p>
-      <p>pg_auto_failover is open source and developed in public.</p>
-      <div class="buttons">
-        <a href="https://github.com/hapostgres/pg_auto_failover" class="btn btn-secondary" target="_blank">GitHub</a>
-        <a href="https://pg-auto-failover.readthedocs.io/" class="btn btn-secondary" target="_blank">Read Docs</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section_support">
-  <div class="wrapper">
-    <div class="content">
-      <h2>Support pg_auto_failover</h2>
-      <p class="subtitle">Keep your database available</p>
-      <p>If pg_auto_failover is part of your HA strategy, supporting its maintenance ensures faster fixes, continued compatibility, and long-term reliability.</p>
-      <div class="buttons">
-        <a href="/#pricing" class="btn btn-primary">Support This Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section_ecosystem">
-  <div class="wrapper">
-    <div class="content">
-      <h2>Get the most out of PostgreSQL in production</h2>
-      <p class="subtitle">Sharpen your skills, improve reliability, move faster</p>
-      <p>If you run PostgreSQL in production, the difference is not just tooling—it's how well you use it. Query design, data modeling, migrations, and performance tuning directly impact reliability and delivery speed.</p>
-      <p>We provide a complete, structured program to help you level up: from fundamentals to advanced production patterns, with practical, hands-on material you can apply immediately.</p>
-      <div class="ecosystem_grid">
-        <a href="https://theartofpostgresql.com/book/" class="ecosystem_card">
-          <i class="fa-solid fa-book-open"></i>
-          <h3>Book</h3>
-          <p>Master SQL and PostgreSQL fundamentals</p>
-        </a>
-        <a href="https://theartofpostgresql.com/course/" class="ecosystem_card">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <h3>Course</h3>
-          <p>Structured learning with real-world patterns</p>
-        </a>
-        <a href="https://theartofpostgresql.com/workshop/" class="ecosystem_card">
-          <i class="fa-solid fa-microphone"></i>
-          <h3>Workshop</h3>
-          <p>Hands-on, team-focused training</p>
-        </a>
-        <a href="https://lab.taop.xyz/" class="ecosystem_card">
-          <i class="fa-solid fa-flask"></i>
-          <h3>Lab</h3>
-          <p>Practice with realistic datasets and exercises</p>
-        </a>
-      </div>
     </div>
   </div>
 </section>
@@ -234,3 +143,4 @@
 </body>
 
 </html>
+
