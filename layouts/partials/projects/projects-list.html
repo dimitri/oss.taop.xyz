@@ -1,7 +1,7 @@
 <section class="section section_projects">
   <div class="wrapper">
     <div class="content">
-      <div class="projects_grid">
+      <div class="projects_grid projects_grid_2col">
         <div class="project_card">
           <i class="fa-solid fa-truck-fast"></i>
           <h3>pgloader</h3>
@@ -35,6 +35,17 @@
             <a href="/pg_auto_failover/" class="link">pg_auto_failover page</a>
             <a href="https://github.com/hapostgres/pg_auto_failover" class="link" target="_blank">GitHub</a>
             <a href="https://pg-auto-failover.readthedocs.io/" class="link" target="_blank">Read Docs</a>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>pgextwlist</h3>
+          <p class="project_subtitle">PostgreSQL extension whitelisting</p>
+          <p>pgextwlist lets cloud providers and hosting platforms safely offer PostgreSQL extension installation to non-superuser tenants. It intercepts CREATE EXTENSION statements and runs whitelisted ones under superuser privileges, dropping those privileges before returning control — a sudo model for extensions. Used in production by Heroku, Aiven, Zalando, and Azure Database for PostgreSQL.</p>
+          <div class="project_links">
+            <a href="/pgextwlist/" class="link">pgextwlist page</a>
+            <a href="https://github.com/dimitri/pgextwlist" class="link" target="_blank">GitHub</a>
           </div>
         </div>
       </div>

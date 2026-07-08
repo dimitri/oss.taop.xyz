@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8">
-	<title>pg_auto_failover - High Availability Manager | Open Source Software Maintenance</title>
+	<title>pgextwlist - PostgreSQL Extension Whitelisting | Open Source Software Maintenance</title>
 	<meta name="description" content="Open Source Software maintenance contributions for reliability, accountability, and independent project steering">
 
         <meta name="twitter:card" content="summary" />
@@ -52,12 +52,12 @@
 <section class="section section_hero_dark">
   <div class="wrapper">
     <div class="content">
-      <h1>pg_auto_failover</h1>
-      <p class="subtitle">Automated PostgreSQL high availability</p>
-      <p>pg_auto_failover monitors PostgreSQL nodes and manages failover automatically using native PostgreSQL streaming replication. A clear, predictable HA model without complex external orchestration.</p>
+      <h1>pgextwlist</h1>
+      <p class="subtitle">A sudo model for PostgreSQL extensions</p>
+      <p>pgextwlist lets cloud providers and hosting platforms safely offer PostgreSQL extension installation to non-superuser tenants, using a whitelist and privilege-elevation model.</p>
       <div class="buttons">
         <a href="/#pricing" class="btn btn-primary">Support This Project</a>
-        <a href="https://github.com/hapostgres/pg_auto_failover" class="btn btn-secondary" target="_blank">View on GitHub</a>
+        <a href="https://github.com/dimitri/pgextwlist" class="btn btn-secondary" target="_blank">View on GitHub</a>
       </div>
     </div>
   </div>
@@ -65,42 +65,42 @@
 <section class="section section_solution">
   <div class="wrapper">
     <div class="content">
-      <h2>What pg_auto_failover does</h2>
-      <p class="subtitle">Automatic promotion with zero data loss</p>
-      <p>pg_auto_failover runs a monitor that tracks the health of primary and standby nodes. When the primary fails, the monitor promotes the standby and reconfigures the cluster — no manual intervention, no data loss, no external dependencies.</p>
+      <h2>What pgextwlist does</h2>
+      <p class="subtitle">Controlled privilege elevation for extension management</p>
+      <p>pgextwlist intercepts <code>CREATE EXTENSION</code> statements and runs whitelisted ones under superuser privileges, dropping those privileges before returning control to the caller — so tenants get the extensions they need without ever holding superuser access.</p>
       <div class="value_props">
         <div class="value_prop">
           <i class="fa-solid fa-triangle-exclamation"></i>
           <h3>Why it matters</h3>
-          <p class="subtitle">Manual failover is slow and error-prone under pressure</p>
+          <p class="subtitle">Superuser is required, but cannot be granted</p>
           <ul class="use_cases_list">
-            <li>Primary failures happen at the worst possible time</li>
-            <li>Manual promotion steps are risky when you're half-awake at 3am</li>
-            <li>External tools add operational complexity and new failure modes</li>
-            <li>pg_auto_failover uses PostgreSQL's own replication — nothing to learn, nothing to trust blindly</li>
+            <li>PostgreSQL requires superuser to install most C-coded extensions</li>
+            <li>Cloud tenants cannot be given superuser access</li>
+            <li>Without a solution, extensions like PostGIS or pgcrypto are simply unavailable</li>
+            <li>pgextwlist bridges the gap without compromising database security</li>
           </ul>
         </div>
         <div class="value_prop">
-          <i class="fa-solid fa-shield-halved"></i>
+          <i class="fa-solid fa-server"></i>
           <h3>Typical use cases</h3>
-          <p class="subtitle">Where pg_auto_failover fits</p>
+          <p class="subtitle">Where pgextwlist fits</p>
           <ul class="use_cases_list">
-            <li>Production PostgreSQL clusters requiring HA without Patroni complexity</li>
-            <li>Kubernetes deployments needing predictable failover</li>
-            <li>Teams who want HA behaviour they can reason about and test</li>
-            <li>On-premise and cloud environments alike</li>
+            <li>Managed PostgreSQL offerings (Heroku, Aiven, Zalando Spilo, Azure Database for PostgreSQL)</li>
+            <li>Kubernetes-based Postgres operators</li>
+            <li>Multi-tenant SaaS platforms</li>
+            <li>Private clouds where DBA and tenant roles are separate</li>
           </ul>
         </div>
         <div class="value_prop">
           <i class="fa-solid fa-bolt"></i>
           <h3>Key capabilities</h3>
-          <p class="subtitle">Built on PostgreSQL native features</p>
+          <p class="subtitle">Fine-grained control over extension lifecycle</p>
           <ul class="capabilities_list">
-            <li>Automatic failover with synchronous replication</li>
-            <li>Zero data loss on controlled failover</li>
-            <li>Monitor node coordinates the cluster state machine</li>
-            <li>Works with any number of standby nodes</li>
-            <li>Simple CLI for setup and operations</li>
+            <li>Per-server or per-role whitelist via <code>extwlist.extensions</code></li>
+            <li>Covers CREATE, DROP, ALTER UPDATE, COMMENT ON EXTENSION</li>
+            <li>Custom SQL scripts run before/after each operation</li>
+            <li>Supports PostgreSQL 10 through 18</li>
+            <li>Packaged for Debian, Ubuntu, and RPM distributions</li>
           </ul>
         </div>
       </div>
@@ -112,7 +112,7 @@
     <div class="content">
       <h2>Current focus</h2>
       <p class="subtitle">Active maintenance areas</p>
-      <p>Current work focuses on PostgreSQL version compatibility, Kubernetes operator integration, stability improvements for edge cases in network partition scenarios, and documentation.</p>
+      <p>Current work focuses on PostgreSQL major-version compatibility (CI on PG 10–18), custom scripts documentation, and packaging for current Debian and RPM targets.</p>
     </div>
   </div>
 </section>
@@ -131,12 +131,11 @@
 <section class="section section_get">
   <div class="wrapper">
     <div class="content">
-      <h2>Get pg_auto_failover</h2>
+      <h2>Get pgextwlist</h2>
       <p class="subtitle">Open source and available now</p>
-      <p>pg_auto_failover is open source and available as a PostgreSQL extension. Packages are available for Debian, Ubuntu, and RPM-based distributions, and a Docker image is provided.</p>
+      <p>pgextwlist is open source and developed in public. Load it via <code>local_preload_libraries</code> and configure the whitelist with <code>extwlist.extensions</code>.</p>
       <div class="buttons">
-        <a href="https://github.com/hapostgres/pg_auto_failover" class="btn btn-secondary" target="_blank">GitHub</a>
-        <a href="https://pg-auto-failover.readthedocs.io" class="btn btn-secondary" target="_blank">Documentation</a>
+        <a href="https://github.com/dimitri/pgextwlist" class="btn btn-secondary" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
@@ -144,9 +143,9 @@
 <section class="section section_support">
   <div class="wrapper">
     <div class="content">
-      <h2>Support pg_auto_failover</h2>
-      <p class="subtitle">Keep high availability reliable</p>
-      <p>If pg_auto_failover protects your production PostgreSQL cluster, supporting its maintenance ensures continued compatibility, faster fixes, and confidence in the behaviour you depend on.</p>
+      <h2>Support pgextwlist</h2>
+      <p class="subtitle">Keep extension whitelisting reliable</p>
+      <p>If pgextwlist is part of your managed PostgreSQL stack, supporting its maintenance ensures continued PostgreSQL version compatibility, faster bug fixes, and long-term reliability for your tenants.</p>
       <div class="buttons">
         <a href="/#pricing" class="btn btn-primary">Support This Project</a>
       </div>
