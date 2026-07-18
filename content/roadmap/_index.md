@@ -1,6 +1,7 @@
 ---
 title: "Roadmap"
 slug: roadmap
+description: "Last release, recent improvements, and what's next for pgloader, pgcopydb, pg_auto_failover, and pgextwlist — the real backlog behind these PostgreSQL tools."
 ---
 
 <section class="section section_hero_dark">
