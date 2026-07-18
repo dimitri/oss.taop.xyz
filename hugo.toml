@@ -1,4 +1,4 @@
-baseURL = 'https://oss.taop.xyz/'
+baseURL = 'https://oss.theartofpostgresql.com/'
 locale = 'en-us'
 title = 'Open Source Software Maintenance'
 theme = "oss"

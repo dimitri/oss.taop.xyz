@@ -4,13 +4,16 @@
 	        <h6>about the open source software</h6>
 	        <p>This project offers professional maintenance for open source PostgreSQL tools. We believe in reliable, accountable, and independent stewardship of critical database infrastructure.</p>
 	        <p>Our mission is to ensure the long-term sustainability of these essential tools through professional support, continuous development, and community engagement.</p>
-	        <ul>
-	            <li><a target="_blank" href="mailto:dim@tapoueh.org">email</a></li>
-	            <li><a target="_blank" href="https://twitter.com/tapoueh">twitter</a></li>
-	            <li><a target="_blank" href="https://github.com/dimitri">github</a></li>
-	            <li><a target="_blank" href="https://github.com/dimitri/pgloader">pgloader</a></li>
-	            <li><a target="_blank" href="https://github.com/dimitri/pgcopydb">pgcopydb</a></li>
-	            <li><a target="_blank" href="https://github.com/hapostgres/pg_auto_failover">pg_auto_failover</a></li>
+	        <ul class="social_links">
+	            <li><a target="_blank" href="mailto:dim@tapoueh.org" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+	            <li><a target="_blank" href="https://www.linkedin.com/in/dimitrifontaine/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+	            <li><a target="_blank" href="https://github.com/dimitri" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+	        </ul>
+	        <ul class="project_links">
+	            <li><a target="_blank" href="https://github.com/dimitri/pgloader"><i class="fa-solid fa-database"></i> pgloader</a></li>
+	            <li><a target="_blank" href="https://github.com/dimitri/pgcopydb"><i class="fa-solid fa-copy"></i> pgcopydb</a></li>
+	            <li><a target="_blank" href="https://github.com/hapostgres/pg_auto_failover"><i class="fa-solid fa-heart-pulse"></i> pg_auto_failover</a></li>
+	            <li><a target="_blank" href="https://github.com/dimitri/pgextwlist"><i class="fa-solid fa-list-check"></i> pgextwlist</a></li>
 	        </ul>
      	</div>
 	    <div class="faq_block">
@@ -20,6 +23,10 @@
 	           <dd>Our maintenance subscriptions include bug fixes, security updates, performance improvements, and priority support for the covered open source tools.</dd>
 	           <dt>How is this different from using the software for free?</dt>
 	           <dd>The software remains freely available under its original open source license. Our subscription provides professional support, guaranteed response times, and funding for continued development.</dd>
+	           <dt>Who's behind this?</dt>
+	           <dd>Dimitri Fontaine, author and maintainer of pgloader, pgcopydb, and pg_auto_failover, with 25+ years of open source PostgreSQL contributions and a public track record on <a target="_blank" href="https://github.com/dimitri">GitHub</a>.</dd>
+	           <dt>How does this relate to The Art of PostgreSQL?</dt>
+	           <dd>This maintenance program is part of The Art of PostgreSQL, the wider ecosystem of PostgreSQL training and resources at <a target="_blank" href="https://theartofpostgresql.com">theartofpostgresql.com</a> &mdash; including the book, course, workshop, and lab.</dd>
 	           <dt>Can I get a refund?</dt>
 	           <dd>Yes, if the service doesn't meet your expectations, contact us for a full refund within 30 days.</dd>
 	           <dt>How do I purchase a subscription?</dt>
@@ -31,7 +38,7 @@
 
 <div class="copyright">
     <div class="wrapper">
-        Copyright 2024 &copy; Dimitri Fontaine. All rights reserved. Design by <a style="color: white; font-weight: bold;" target="_blank" href="https://www.terrilowry.com">TerriLowry.com.</a>
+        Copyright {{ now.Year }} &copy; Dimitri Fontaine. All rights reserved.
     </div>
 </div>
 
