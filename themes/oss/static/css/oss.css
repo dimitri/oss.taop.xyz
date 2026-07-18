@@ -439,6 +439,49 @@ body.oss .known_users a {
   text-decoration: underline;
 }
 
+body.oss .about_block .project_links {
+  display: block;
+  list-style: none;
+  padding: 15px 0 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+body.oss .about_block .project_links li {
+  display: inline-block;
+}
+
+body.oss .about_block .project_links li + li:before {
+  content: "|";
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  opacity: 0.35;
+}
+
+body.oss .about_block .project_links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  opacity: 0.85;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+body.oss .about_block .project_links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+body.oss .about_block .project_links a i {
+  width: 14px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
 body.oss .improvements_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
