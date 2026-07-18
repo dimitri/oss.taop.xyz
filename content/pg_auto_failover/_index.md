@@ -2,6 +2,7 @@
 title: "pg_auto_failover - High Availability Manager"
 slug: pg_auto_failover
 type: project-page
+description: "pg_auto_failover monitors PostgreSQL nodes and manages failover automatically using native PostgreSQL streaming replication — automated HA without complex external orchestration."
 ---
 
 <section class="section section_hero_dark">

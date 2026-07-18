@@ -2,6 +2,7 @@
 title: "pgextwlist - PostgreSQL Extension Whitelisting"
 slug: pgextwlist
 type: project-page
+description: "pgextwlist lets cloud providers and hosting platforms safely offer PostgreSQL extension installation to non-superuser tenants, using a whitelist and privilege-elevation model."
 ---
 
 <section class="section section_hero_dark">

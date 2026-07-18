@@ -2,6 +2,7 @@
 title: "pgloader - Database Migration Tool"
 slug: pgloader
 type: project-page
+description: "pgloader handles heterogeneous database migrations from MySQL, SQLite, MS SQL Server, and more, with automatic schema conversion, type mapping, and high-performance parallel loading."
 ---
 
 <section class="section section_hero_dark">

@@ -2,6 +2,7 @@
 title: "pgcopydb - Database Copy Tool"
 slug: pgcopydb
 type: project-page
+description: "pgcopydb copies a PostgreSQL database to a target server using logical replication and parallel workers, for production migrations and version upgrades where pg_dump downtime is unacceptable."
 ---
 
 <section class="section section_hero_dark">

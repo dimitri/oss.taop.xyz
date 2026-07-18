@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>{{ .Title }} | {{ .Site.Title }}</title>
-	<meta name="description" content="{{ .Site.Params.description }}">
+	{{ $pageTitle := printf "%s | %s" .Title .Site.Title }}
+	{{ if .IsHome }}{{ $pageTitle = .Site.Title }}{{ end }}
+	{{ $pageDesc := .Description | default .Site.Params.description }}
+	{{ $ogImage := "images/og-image.png" | absURL }}
+	<title>{{ $pageTitle }}</title>
+	<meta name="description" content="{{ $pageDesc }}">
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tapoueh" />
         <meta name="twitter:creator" content="@tapoueh" />
-        <meta property="og:url" content="https://oss.taop.xyz" />
-        <meta property="og:title" content="{{ .Site.Title }}" />
-        <meta property="og:description" content="{{ .Site.Params.description }}" />
-	
+        <meta name="twitter:image" content="{{ $ogImage }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ .Permalink }}" />
+        <meta property="og:site_name" content="{{ .Site.Title }}" />
+        <meta property="og:title" content="{{ $pageTitle }}" />
+        <meta property="og:description" content="{{ $pageDesc }}" />
+        <meta property="og:image" content="{{ $ogImage }}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	
 	<link href="/favicon.ico" rel="icon" type="image/x-icon">
