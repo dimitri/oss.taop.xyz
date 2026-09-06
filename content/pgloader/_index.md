@@ -53,6 +53,7 @@ description: "Funded maintenance for pgloader, the MySQL, SQLite and MS SQL Serv
             <li>MS SQL Server</li>
             <li>CSV, Fixed-width, and dBase files</li>
             <li>PostgreSQL (for restructuring or copying)</li>
+            <li>Oracle is <a href="https://yesql.fr/en/campaigns/oracle-pgloader-v4/" target="_blank" rel="noopener">open for funding</a>, not yet built &mdash; a threshold campaign, nothing charged below it</li>
           </ul>
         </div>
         <div class="value_prop">

@@ -53,12 +53,26 @@ body.oss { background: var(--paper); color: var(--ink); }
    and .section-alt is added as the generic escape hatch pgloader.io
    uses for sections that fit no named role. */
 body.oss .section { background: var(--paper); padding: 72px 0; }
+/* Which named classes land on the alternate band. Each one is used on
+   exactly one page (checked), so this is a per-page sequence expressed
+   as a set — see the audit note below.
+
+   NOTE: this list cannot be derived, only checked. A new section, or a
+   reordered page, can silently put two same-coloured bands next to each
+   other, which is precisely the bug the theme's own hand-picked
+   alternation had on every page. scripts/altcheck.py walks the built
+   HTML, reads these two selector lists straight out of this file, and
+   reports any page where two consecutive non-dark bands match. Run it
+   after touching section order. */
 body.oss .section_hero,          /* the "problem" band on the home page */
 body.oss .section_works,
 body.oss .section_pricing,
 body.oss .section_focus,
 body.oss .section_meaning,
 body.oss .section_ecosystem,
+body.oss .section_what,          /* partner: tier cards */
+body.oss .section_benefits,      /* partner: "what you get" */
+body.oss .section_maintenance,   /* projects hub: the maintenance band */
 body.oss .section-alt { background: var(--paper-2); }
 body.oss .section_hero_dark,
 body.oss .section_cta { background: var(--plum); }
