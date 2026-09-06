@@ -640,3 +640,8 @@ body.oss .section .tier-badge-scarce {
   background: var(--sky);
   color: #fff;
 }
+
+/* A .two_col_text following a .list-divided sat flush against that
+   list's last hairline, reading as a fourth row rather than as the
+   passage that closes the section. */
+body.oss .list-divided + .two_col_text { margin-top: 30px; }

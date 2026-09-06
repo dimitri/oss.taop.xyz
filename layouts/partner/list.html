@@ -10,29 +10,48 @@
 <section class="section section_solution">
   <div class="wrapper">
     <div class="content">
-      <h2>As a partner, you gain</h2>
-      
-      <div class="value_props">
-        <div class="value_prop">
+      {{/* Consolidated from three sections that said the same thing at
+           three points on the page: "As a partner, you gain" (3 cards),
+           "Why it matters" (a paragraph), and "What you get" (5 cards,
+           800px further down). The union of the eight cards is three
+           actual benefits — priority, influence, credibility — plus two
+           entries that were not benefits at all: "Faster delivery" is
+           the outcome of priority, and "Async model" is how the program
+           runs, which the intro above already says. Each row below now
+           carries the detail both versions had, so nothing is lost by
+           merging them.
+
+           A divided list rather than cards: these are three facets of
+           one offer, read together, not three options to choose
+           between. */}}
+      <h2><i class="fa-solid fa-arrow-trend-up section-icon"></i>What a Partnership Actually Gives You</h2>
+      <p class="subtitle">Three things, and the business case for each</p>
+      <div class="list-divided">
+        <div class="list-divided-item">
           <i class="fa-solid fa-list-check"></i>
-          <h3>Priority access</h3>
-          <p>Priority access to maintenance workflows</p>
+          <div>
+            <h3>Priority access</h3>
+            <p>Your issues and PRs are handled first, under a defined triage SLA, instead of sitting in the public queue. That is what turns &ldquo;blocked on upstream&rdquo; into a date you can put in a client plan &mdash; and it is why this reads as faster delivery rather than as support.</p>
+          </div>
         </div>
-        <div class="value_prop">
+        <div class="list-divided-item">
           <i class="fa-solid fa-map-location-dot"></i>
-          <h3>Roadmap influence</h3>
-          <p>Ability to influence roadmap and release content</p>
+          <div>
+            <h3>Roadmap influence</h3>
+            <p>Input on the roadmap and on what goes into a release, so the tools move toward what your clients actually keep asking for rather than away from it.</p>
+          </div>
         </div>
-        <div class="value_prop">
+        <div class="list-divided-item">
           <i class="fa-solid fa-award"></i>
-          <h3>Credibility</h3>
-          <p>A credible "backed by the author" layer for client engagements</p>
+          <div>
+            <h3>Credibility</h3>
+            <p>A public listing and logo placement in the partner directory, and a &ldquo;backed by the author&rdquo; layer you can put in front of a client during an engagement.</p>
+          </div>
         </div>
       </div>
-      
       <div class="two_col_text">
-        <p>This translates directly into reduced project risk, faster delivery, and fewer internal workarounds—while keeping your teams focused on high-value consulting work rather than patching tooling.</p>
-        <p>The program is intentionally designed to be asynchronous, predictable, and scalable, so that collaboration remains efficient without introducing friction.</p>
+        <p>Together these turn upstream maintenance into a predictable layer you can build on: less project risk, fewer internal workarounds, and better margins &mdash; because your team stays on high-value consulting work instead of patching tooling.</p>
+        <p>The program is asynchronous by design, so none of it costs you meetings. Predictable and scalable, so it keeps working as you take on more PostgreSQL work.</p>
       </div>
     </div>
   </div>
@@ -104,51 +123,10 @@
 </section>
 
 
-<section class="section section_why">
-  <div class="wrapper">
-    <div class="content">
-      <h2>Why it matters</h2>
-      <p>Your business depends on upstream reliability. This program turns maintenance into a predictable layer you can build on—improving margins, reducing risk, and accelerating delivery for your clients.</p>
-    </div>
-  </div>
-</section>
 
 
-<section class="section section_benefits">
-  <div class="wrapper">
-    <div class="content">
-      <h2>What you get</h2>
-      
-      <div class="benefits_grid">
-        <div class="benefit_block">
-          <i class="fa-solid fa-bolt"></i>
-          <h3>Faster delivery</h3>
-          <p>Reduce blockers, ship on schedule</p>
-        </div>
-        <div class="benefit_block">
-          <i class="fa-solid fa-list-check"></i>
-          <h3>Priority queue</h3>
-          <p>Your issues and PRs handled first</p>
-        </div>
-        <div class="benefit_block">
-          <i class="fa-solid fa-map-location-dot"></i>
-          <h3>Upstream influence</h3>
-          <p>Align roadmap with real client needs</p>
-        </div>
-        <div class="benefit_block">
-          <i class="fa-solid fa-award"></i>
-          <h3>Credibility</h3>
-          <p>Public listing and logo placement</p>
-        </div>
-        <div class="benefit_block">
-          <i class="fa-solid fa-clock"></i>
-          <h3>Async model</h3>
-          <p>No calls, no friction—just execution</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
 
 
 <section class="section section_cta">
