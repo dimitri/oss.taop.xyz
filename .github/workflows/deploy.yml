@@ -30,7 +30,13 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
       - name: Build
-        run: hugo --minify --gc --baseURL "https://oss.taop.xyz/"
+        # baseURL must match the CNAME. It was oss.taop.xyz, a host that
+        # does not resolve, so every absolute URL in the deployed build —
+        # og:url, twitter:image, and all 10 sitemap entries — pointed at a
+        # dead domain while the site itself served from
+        # oss.theartofpostgresql.com. Leaving it to hugo.toml keeps the two
+        # from drifting apart again.
+        run: hugo --minify --gc
       - uses: actions/upload-pages-artifact@v5
         with:
           path: ./docs

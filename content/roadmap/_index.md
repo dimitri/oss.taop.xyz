@@ -1,5 +1,5 @@
 ---
-title: "Roadmap"
+title: "PostgreSQL Tooling Roadmap and Current Work"
 slug: roadmap
 description: "Last release, recent improvements, and what's next for pgloader, pgcopydb, pg_auto_failover, and pgextwlist — the real backlog behind these PostgreSQL tools."
 ---
@@ -27,7 +27,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-heart-pulse"></i></div>
           <div class="roadmap_header_text">
-            <h3>pg_auto_failover</h3>
+            <h3><a href="/pg_auto_failover/">pg_auto_failover</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 1,362 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v2.2 &middot; Apr 3, 2025</span>
@@ -108,7 +108,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-database"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgloader</h3>
+            <h3><a href="/pgloader/">pgloader</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 6,471 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v3.6.9 &middot; stable, Oct 2022</span>
@@ -162,7 +162,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-copy"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgcopydb</h3>
+            <h3><a href="/pgcopydb/">pgcopydb</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 1,531 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v0.18 &middot; Jun 27, 2026</span>
@@ -224,7 +224,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-list-check"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgextwlist</h3>
+            <h3><a href="/pgextwlist/">pgextwlist</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 102 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v1.20 &middot; Jul 8, 2026</span>

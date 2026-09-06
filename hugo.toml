@@ -9,4 +9,9 @@ publishDir = "docs"
     unsafe = true
 
 [params]
-  description = "Open Source Software maintenance contributions for reliability, accountability, and independent project steering"
+  description = "Funded maintenance for the PostgreSQL tools you run in production — pgloader, pgcopydb, pg_auto_failover, and pgextwlist. Priority issue handling, defined SLAs, quarterly releases."
+  # The <title> for the home page only. .Site.Title stays short because
+  # it is also the suffix on every other page and the og:site_name; the
+  # home page is the site's most valuable page and "Open Source Software
+  # Maintenance" alone named neither the technology nor the products.
+  home_title = 'PostgreSQL Tool Maintenance and Priority Support'
