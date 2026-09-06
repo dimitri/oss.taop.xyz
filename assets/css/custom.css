@@ -428,8 +428,31 @@ body.oss .project_card > i {
 body.oss .value_prop h3,
 body.oss .project_card h3,
 body.oss .ecosystem_card h3 { font-family: 'Bookman', Georgia, serif; color: var(--plum); }
+/* ---- Card hover, one treatment.
+   The theme flips .ecosystem_card to a solid #67527a fill on hover and
+   repaints its h3/i/p white to suit. This layer had added a gold-border
+   hover for .project_card and applied it here too, so the two fought:
+   the fill still landed (its :hover selectors outrank a plain class),
+   but this file's later `.section:not(…) p` and `.ecosystem_card h3`
+   rules won the text colours back to ink — dark text on a dark plum
+   fill, which is the unreadable hover.
+
+   Resolved by dropping the fill rather than restoring the white text.
+   A card that inverts on hover reads as "selected", not "clickable",
+   and these four sit next to project cards that don't invert. One
+   vocabulary: the card stays put, its border goes gold, its heading
+   goes plum-deep — the same gold-means-act-on-this rule as the buttons
+   and the nav. Every declaration the theme's :hover set is overridden
+   explicitly, at :hover specificity, so nothing is left half-applied. */
 body.oss .ecosystem_card:hover,
-body.oss .project_card:hover { border-color: var(--gold-soft); }
+body.oss .project_card:hover {
+  background: #fffdfb;
+  border-color: var(--gold-soft);
+  box-shadow: 0 6px 20px rgba(55, 38, 73, .07);
+}
+body.oss .ecosystem_card:hover h3 { color: var(--plum-deep); }
+body.oss .ecosystem_card:hover p { color: var(--ink-soft); }
+body.oss .ecosystem_card:hover i { color: var(--gold); background: rgba(201, 162, 39, .14); }
 
 /* ---- Mobile. The 46px badge is a third of the line height at mobile
    heading sizes; scale it with the type rather than letting it dominate. */
@@ -564,3 +587,16 @@ body.oss .project_card .project_links .link {
 body.oss .project_card .project_links .link:first-child { color: var(--plum); }
 body.oss .project_card .project_links .link:hover { color: var(--gold); }
 body.oss .project_card { display: flex; flex-direction: column; }
+
+/* The ecosystem cards inherited a flat #f9f9f9 fill from the theme,
+   which on the paper-2 band they sit on was nearly the same value —
+   the cards had no edge at rest, so there was nothing for the hover to
+   change. Give them the same resting treatment as every other card in
+   the system. */
+body.oss .ecosystem_card {
+  background: #fffdfb;
+  border: 1px solid var(--rule);
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+body.oss .ecosystem_card p { font: 400 13.5px/1.55 'Lato', sans-serif; color: var(--ink-soft); }
+body.oss .ecosystem_card i { transition: color .15s ease, background .15s ease; }
