@@ -1,47 +1,69 @@
+{{/* Every card said what the tool is. None said whether anyone trusts
+     it, which is the question a reader on a funding page is actually
+     asking. Star counts and named production users are the same facts
+     /roadmap/ documents per project — kept here so the card earns its
+     click, and so each project name sits next to the keywords people
+     search for it with. "Learn More" is replaced by a link that names
+     its destination. */}}
 <section class="section section_projects">
   <div class="wrapper">
     <div class="content">
-      <h2>Supported Projects</h2>
-      <p class="subtitle">Production-grade tools for critical workflows</p>
-      
+      <h2 class="h-lead"><i class="fa-solid fa-boxes-stacked section-icon"></i>Four PostgreSQL Tools, One Maintainer</h2>
+      <p class="subtitle">Migration, replication, high availability, and multi-tenant extension safety</p>
       <div class="projects_grid projects_grid_2col">
         <div class="project_card">
           <i class="fa-solid fa-truck-fast"></i>
           <h3>pgloader</h3>
-          <p class="project_subtitle">Database Migration Tool</p>
-          <p>Loads data from MySQL, SQLite, MSSQL, Oracle into PostgreSQL. Handles schema conversion and type mapping automatically.</p>
+          <p class="project_subtitle">MySQL, SQLite and MS SQL Server &rarr; PostgreSQL migration</p>
+          <p>Connects to the source database, converts the schema to
+          PostgreSQL conventions, and loads the data in parallel from one
+          command. Maintained since 2005, and the tool named in nearly
+          every MySQL-to-PostgreSQL migration guide written since.</p>
+          <p class="project_meta">6,471 GitHub stars &middot; <a href="https://yesql.fr/en/campaigns/oracle-pgloader-v4/" target="_blank" rel="noopener">Oracle support: open for funding</a></p>
           <div class="project_links">
-            <a href="/pgloader/" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-        
-        <div class="project_card">
-          <i class="fa-solid fa-copy"></i>
-          <h3>pgcopydb</h3>
-          <p class="project_subtitle">PostgreSQL-to-PostgreSQL</p>
-          <p>Copies databases with minimal downtime using logical replication. Ideal for migrations and upgrades.</p>
-          <div class="project_links">
-            <a href="/pgcopydb/" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-        
-        <div class="project_card">
-          <i class="fa-solid fa-shield-halved"></i>
-          <h3>pg_auto_failover</h3>
-          <p class="project_subtitle">High Availability</p>
-          <p>Automatic failover manager built on PostgreSQL native features. Simple, predictable, testable.</p>
-          <div class="project_links">
-            <a href="/pg_auto_failover/" class="btn btn-secondary">Learn More</a>
+            <a href="/pgloader/" class="btn btn-secondary">pgloader maintenance &rarr;</a>
           </div>
         </div>
 
         <div class="project_card">
-          <i class="fa-solid fa-list-check"></i>
-          <h3>pgextwlist</h3>
-          <p class="project_subtitle">Extension Whitelisting</p>
-          <p>Lets cloud providers safely offer extension installation to non-superuser tenants via a whitelist and privilege-elevation model.</p>
+          <i class="fa-solid fa-copy"></i>
+          <h3>pgcopydb</h3>
+          <p class="project_subtitle">PostgreSQL-to-PostgreSQL copies and major-version upgrades</p>
+          <p>Copies a database with minimal downtime using logical
+          replication &mdash; the practical path for a major-version
+          upgrade or a move between providers. Powers Azure Database for
+          PostgreSQL&rsquo;s official Migration Service.</p>
+          <p class="project_meta">1,531 GitHub stars &middot; Microsoft, PlanetScale, Neon, Timescale</p>
           <div class="project_links">
-            <a href="/pgextwlist/" class="btn btn-secondary">Learn More</a>
+            <a href="/pgcopydb/" class="btn btn-secondary">pgcopydb maintenance &rarr;</a>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>pg_auto_failover</h3>
+          <p class="project_subtitle">Automated PostgreSQL high availability and failover</p>
+          <p>One monitor, N Postgres nodes, automated promotion on failure
+          &mdash; no external consensus cluster to run and babysit. Built on
+          PostgreSQL&rsquo;s own replication, so it stays predictable and
+          testable.</p>
+          <p class="project_meta">1,362 GitHub stars &middot; VMware/Broadcom Tanzu Postgres</p>
+          <div class="project_links">
+            <a href="/pg_auto_failover/" class="btn btn-secondary">pg_auto_failover maintenance &rarr;</a>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>pgextwlist</h3>
+          <p class="project_subtitle">Safe extension installs for non-superuser tenants</p>
+          <p>Lets a cloud provider offer <code>CREATE EXTENSION</code> to
+          customers who are not superusers, through a whitelist and a
+          controlled privilege-elevation model. Small, and load-bearing
+          wherever it runs.</p>
+          <p class="project_meta">102 GitHub stars &middot; Aiven, Zalando, Microsoft Azure</p>
+          <div class="project_links">
+            <a href="/pgextwlist/" class="btn btn-secondary">pgextwlist maintenance &rarr;</a>
           </div>
         </div>
       </div>

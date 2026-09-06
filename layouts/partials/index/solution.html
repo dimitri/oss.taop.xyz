@@ -1,35 +1,41 @@
+{{/* The argument that answers the section above it: why funding this
+     directly is different from the employer-funded model that just
+     failed these projects. Adds the one piece of evidence the page was
+     missing entirely — a sponsor who funded a feature that then shipped
+     free for everyone, which is the model working in public. */}}
 <section class="section section_solution">
   <div class="wrapper">
     <div class="content">
-      <h2>Independent, Long-Term Stewardship</h2>
-      <p class="subtitle">Funded by users, aligned with production needs</p>
-      
-      <div class="two_col_text">
-        <p>These projects are authored and maintained by a single upstream developer with over 20 years of PostgreSQL experience. <a href="/pgloader/">pgloader</a>, for example, has been developed and maintained since 2005, with continuous real-world usage shaping its evolution.</p>
-        <p>This model replaces employer-funded open source with direct user support. The result is independent, accountable maintenance focused on production reliability—no competing priorities, no feature gating, no external agendas.</p>
-      </div>
-      
+      <h2><i class="fa-solid fa-compass section-icon"></i>Funded by the People Who Run It</h2>
+      <p class="subtitle">One maintainer, twenty years, no competing agenda</p>
+      <p>These projects are authored and maintained by a single upstream
+      developer &mdash; a PostgreSQL Major Contributor, working on this
+      since 2005. Funding comes from the teams who depend on the tools
+      rather than from an employer with its own roadmap, which is what
+      keeps the priorities honest: no feature gating, no paid tier of the
+      software itself, no strategy shift when someone gets acquired.</p>
       <div class="value_props">
         <div class="value_prop">
           <i class="fa-solid fa-sack-dollar"></i>
           <h3>Direct funding</h3>
-          <p>Aligned incentives</p>
+          <p>The people paying are the people running it in production. Their bugs are the roadmap.</p>
         </div>
         <div class="value_prop">
           <i class="fa-solid fa-map-location-dot"></i>
           <h3>Independent roadmap</h3>
-          <p>Driven by real usage</p>
+          <p>Priorities come from real usage and production incidents, published in the open on the roadmap page.</p>
         </div>
         <div class="value_prop">
           <i class="fa-solid fa-arrows-rotate"></i>
           <h3>Long-term continuity</h3>
-          <p>Same maintainer, consistent direction</p>
+          <p>Same maintainer across two decades and four projects. No handover risk, no rewrite-and-rename.</p>
         </div>
       </div>
-      
-      <div class="buttons">
-        <a href="#pricing" class="btn btn-primary">Secure Your Stack</a>
-      </div>
+      <p>This is not theoretical. Redpill Linpro asked what the most
+      efficient way to migrate a customer off Microsoft SQL Server would
+      be, then sponsored MS SQL Server support in pgloader outright. It
+      shipped, and it has been free for everyone since. The Sponsor and
+      Per-Release tiers below are the same mechanism, open to anyone.</p>
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 ---
-title: "Roadmap"
+title: "PostgreSQL Tooling Roadmap and Current Work"
 slug: roadmap
 description: "Last release, recent improvements, and what's next for pgloader, pgcopydb, pg_auto_failover, and pgextwlist — the real backlog behind these PostgreSQL tools."
 ---
@@ -7,7 +7,8 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_hero_dark">
   <div class="wrapper">
     <div class="content">
-      <h1>Current Work and Priorities</h1>
+      <p class="hero-kicker">The real backlog, not a wishlist</p>
+      <h1>What Is Actually Being Worked On</h1>
       <p class="subtitle">Driven by real-world usage and production issues</p>
       <div class="hero_columns">
         <p>This roadmap reflects the actual backlog across pgloader, pgcopydb, pg_auto_failover, and pgextwlist. Work is prioritized based on production impact and user support. Most items come from real-world usage &mdash; GitHub issues, production incidents, and comparison against the rest of the PostgreSQL tooling ecosystem.</p>
@@ -20,13 +21,13 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_themes">
   <div class="wrapper">
     <div class="content">
-      <h2>Project by Project</h2>
+      <h2 class="h-lead"><i class="fa-solid fa-list-check section-icon"></i>Project by Project: Last Release, Recent Work, What&rsquo;s Next</h2>
       <p class="subtitle">Last release, recent improvements, and what's next</p>
       <div class="project_roadmap_block" id="pg_auto_failover">
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-heart-pulse"></i></div>
           <div class="roadmap_header_text">
-            <h3>pg_auto_failover</h3>
+            <h3><a href="/pg_auto_failover/">pg_auto_failover</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 1,362 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v2.2 &middot; Apr 3, 2025</span>
@@ -107,7 +108,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-database"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgloader</h3>
+            <h3><a href="/pgloader/">pgloader</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 6,471 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v3.6.9 &middot; stable, Oct 2022</span>
@@ -161,7 +162,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-copy"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgcopydb</h3>
+            <h3><a href="/pgcopydb/">pgcopydb</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 1,531 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v0.18 &middot; Jun 27, 2026</span>
@@ -223,7 +224,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
         <div class="roadmap_header">
           <div class="roadmap_header_icon"><i class="fa-solid fa-list-check"></i></div>
           <div class="roadmap_header_text">
-            <h3>pgextwlist</h3>
+            <h3><a href="/pgextwlist/">pgextwlist</a></h3>
             <div class="release_badges">
               <span class="release_badge badge_stars"><i class="fa-solid fa-star"></i> 102 stars</span>
               <span class="release_badge"><i class="fa-solid fa-tag"></i> v1.20 &middot; Jul 8, 2026</span>
@@ -276,7 +277,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_meaning">
   <div class="wrapper">
     <div class="content">
-      <h2>What this means</h2>
+      <h2><i class="fa-solid fa-circle-info section-icon"></i>What This Backlog Tells You</h2>
       <p>This is not a speculative roadmap. It is a reflection of actual production needs across teams using these tools today. Supporting the projects directly influences what gets fixed, improved, and released next.</p>
     </div>
   </div>
@@ -285,7 +286,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_prioritized">
   <div class="wrapper">
     <div class="content">
-      <h2>How work is prioritized</h2>
+      <h2><i class="fa-solid fa-arrow-up-9-1 section-icon"></i>How Work Gets Prioritized</h2>
       <ul class="priority_list">
         <li>Production blockers and data-loss risks come first</li>
         <li>Paid support tiers move issues forward in the queue</li>
@@ -302,7 +303,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_cta">
   <div class="wrapper">
     <div class="content">
-      <h2>Influence the roadmap</h2>
+      <h2>Put Your Issue at the Front of This Queue</h2>
       <p class="subtitle">Fund the work that matters to you</p>
       <div class="buttons">
         <a href="/#pricing" class="btn btn-primary">Support These Projects</a>
