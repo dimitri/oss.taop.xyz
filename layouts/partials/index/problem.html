@@ -1,10 +1,40 @@
+{{/* Rewritten from the reader's side. The old copy led with the
+     maintainer's plight — "burning out maintainers" — which asks the
+     reader for sympathy before it has given them a reason. The cost of
+     unfunded maintenance lands on the person running the software, and
+     that is the argument that closes. */}}
 <section class="section section_hero">
   <div class="wrapper">
     <div class="content">
-      <h2>The Maintenance Gap</h2>
-      <p class="subtitle">Widely used, rarely funded</p>
-      <p>Open source software powers the modern internet—yet the people who build and maintain it rarely receive any compensation. Thousands of projects rely on volunteer time, burning out maintainers and leaving users vulnerable.</p>
-      <p>When critical tools fail, unpaid maintenance becomes your outage.</p>
+      <h2 class="h-lead"><i class="fa-solid fa-hourglass-half section-icon"></i>Unfunded Maintenance Becomes Your Problem</h2>
+      <p class="subtitle">Not eventually &mdash; on the day you hit the bug</p>
+      <p>Most of these projects were born inside a company, on someone's
+      salary. That sponsorship is gone; the software is still in
+      production everywhere. The gap doesn't show up until the day your
+      migration hits an edge case, or a failover doesn't complete, and the
+      fix is upstream in a queue with no owner and no date.</p>
+      <div class="cost-grid">
+        <div class="cost-card">
+          <i class="fa-solid fa-clock"></i>
+          <h3>The wait</h3>
+          <p>A best-effort issue has no response time. Your release does. Whatever your team does while waiting is unplanned work.</p>
+        </div>
+        <div class="cost-card">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>The workaround</h3>
+          <p>Patching around an upstream bug means you now maintain a fork, or a hack, forever &mdash; and you own every regression it causes.</p>
+        </div>
+        <div class="cost-card">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3>The risk</h3>
+          <p>A tool nobody is paid to maintain is a tool that can go unmaintained between your evaluation and your cutover.</p>
+        </div>
+        <div class="cost-card">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h3>The alternative quote</h3>
+          <p>Consulting day rates to work around the problem locally cost more than a year of priority handling upstream, and fix it for nobody else.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

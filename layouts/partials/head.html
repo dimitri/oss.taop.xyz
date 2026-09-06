@@ -30,7 +30,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/oss.css">
-	
+	{{/* Site-level layer, last so it wins over the theme it overrides.
+	     Fingerprinted so a redeploy can't serve a cached stale copy —
+	     this is the file the whole redesign lives in.
+	     No integrity attribute on purpose: SRI adds nothing to a
+	     same-origin, content-addressed asset, and it breaks any proxy
+	     that rewrites the CSS on the way through (the local preview
+	     does exactly that to mount the site under a path prefix, and a
+	     failed SRI check drops the stylesheet silently). */}}
+	{{ with resources.Get "css/custom.css" }}
+	{{ $custom := . | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+	{{ end }}
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<script src="/js/custom.js"></script>

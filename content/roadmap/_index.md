@@ -7,7 +7,8 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_hero_dark">
   <div class="wrapper">
     <div class="content">
-      <h1>Current Work and Priorities</h1>
+      <p class="hero-kicker">The real backlog, not a wishlist</p>
+      <h1>What Is Actually Being Worked On</h1>
       <p class="subtitle">Driven by real-world usage and production issues</p>
       <div class="hero_columns">
         <p>This roadmap reflects the actual backlog across pgloader, pgcopydb, pg_auto_failover, and pgextwlist. Work is prioritized based on production impact and user support. Most items come from real-world usage &mdash; GitHub issues, production incidents, and comparison against the rest of the PostgreSQL tooling ecosystem.</p>
@@ -20,7 +21,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_themes">
   <div class="wrapper">
     <div class="content">
-      <h2>Project by Project</h2>
+      <h2 class="h-lead"><i class="fa-solid fa-list-check section-icon"></i>Project by Project: Last Release, Recent Work, What&rsquo;s Next</h2>
       <p class="subtitle">Last release, recent improvements, and what's next</p>
       <div class="project_roadmap_block" id="pg_auto_failover">
         <div class="roadmap_header">
@@ -276,7 +277,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_meaning">
   <div class="wrapper">
     <div class="content">
-      <h2>What this means</h2>
+      <h2><i class="fa-solid fa-circle-info section-icon"></i>What This Backlog Tells You</h2>
       <p>This is not a speculative roadmap. It is a reflection of actual production needs across teams using these tools today. Supporting the projects directly influences what gets fixed, improved, and released next.</p>
     </div>
   </div>
@@ -285,7 +286,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_prioritized">
   <div class="wrapper">
     <div class="content">
-      <h2>How work is prioritized</h2>
+      <h2><i class="fa-solid fa-arrow-up-9-1 section-icon"></i>How Work Gets Prioritized</h2>
       <ul class="priority_list">
         <li>Production blockers and data-loss risks come first</li>
         <li>Paid support tiers move issues forward in the queue</li>
@@ -302,7 +303,7 @@ description: "Last release, recent improvements, and what's next for pgloader, p
 <section class="section section_cta">
   <div class="wrapper">
     <div class="content">
-      <h2>Influence the roadmap</h2>
+      <h2>Put Your Issue at the Front of This Queue</h2>
       <p class="subtitle">Fund the work that matters to you</p>
       <div class="buttons">
         <a href="/#pricing" class="btn btn-primary">Support These Projects</a>

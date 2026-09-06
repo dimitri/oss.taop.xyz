@@ -1,88 +1,76 @@
+{{/* Was a six-row comparison table with a single button underneath it.
+     Two problems, both of them conversion problems rather than taste:
+     a four-column table asks the reader to hold the whole grid in their
+     head and rank the rows themselves (most won't, and the ones who do
+     pick the cheapest), and no individual tier had a path to the
+     checkout — the reader had to decide, scroll past their choice, and
+     click a button that didn't name it.
+
+     Card per tier, one CTA each, straight to the ThriveCart checkout,
+     with one tier badged as the recommended default. This is the
+     canonical pricing page: pgloader.io/support/ and
+     mysqltopgsql.com/support/ both send buyers here and both already
+     show exactly these cards, so the names, prices and one-line
+     descriptions are kept identical across all three on purpose. Change
+     them here and change them there in the same pass. */}}
 <section id="pricing" class="section section_pricing">
   <div class="wrapper">
     <div class="content">
-      <h2>Pricing & Support Model</h2>
-      <p class="subtitle">Clear tiers, defined priority</p>
-      <p>Pick the level of priority your production requires.</p>
-      
-      <div class="pricing_table">
-        <div class="pricing_row header">
-          <div class="col">Plan</div>
-          <div class="col">Best for</div>
-          <div class="col">What you get</div>
-          <div class="col">Price</div>
+      <h2 class="h-lead"><i class="fa-solid fa-tags section-icon"></i>Pricing &amp; Tiers</h2>
+      <p class="subtitle">Pick the level of priority your production actually requires</p>
+      <p>One subscription covers every project here — pgloader, pgcopydb,
+      pg_auto_failover, and pgextwlist. Tiers differ by how fast your
+      issues move and how much say you get, not by which tools you're
+      allowed to use.</p>
+
+      <div class="tier-cards">
+        <div class="tier-card">
+          <h3>Community</h3>
+          <p class="tier-price">€0</p>
+          <p class="tier-for">For evaluating, or non-critical use.</p>
+          <p class="tier-benefit">Best-effort, through GitHub, like everyone else.</p>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Community</strong>
-            <span class="subtitle">Use freely</span>
-          </div>
-          <div class="col">Evaluation, non-critical</div>
-          <div class="col">Best-effort via GitHub</div>
-          <div class="col price">€0</div>
+        <div class="tier-card">
+          <h3>Supporter</h3>
+          <p class="tier-price">€100<span>/mo</span></p>
+          <p class="tier-for">Your issues stop getting lost in the queue.</p>
+          <p class="tier-benefit">Priority queue, answered within a few days.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-secondary" target="_blank" rel="noopener">Get this tier &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Supporter</strong>
-            <span class="subtitle">Stay unblocked</span>
-          </div>
-          <div class="col">Production use</div>
-          <div class="col">Priority queue, few days SLA</div>
-          <div class="col price">€100/mo</div>
+        <div class="tier-card tier-recommended">
+          <p class="tier-badge">Recommended</p>
+          <h3>Professional</h3>
+          <p class="tier-price">€800<span>/mo</span></p>
+          <p class="tier-for">When a production system depends on the tool.</p>
+          <p class="tier-benefit">Patches triaged under an SLA, land in the next release.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-primary" target="_blank" rel="noopener">Get this tier &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Professional</strong>
-            <span class="subtitle">Ship with confidence</span>
-          </div>
-          <div class="col">Predictable delivery</div>
-          <div class="col">PR triage SLA, next release</div>
-          <div class="col price">€800/mo</div>
+        <div class="tier-card">
+          <h3>Sponsor</h3>
+          <p class="tier-price">€2,000<span>/mo</span></p>
+          <p class="tier-for">When your roadmap depends on its roadmap.</p>
+          <p class="tier-benefit">Roadmap input, and development bandwidth reserved for you.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-secondary" target="_blank" rel="noopener">Get this tier &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Sponsor</strong>
-            <span class="subtitle">Direct influence</span>
-          </div>
-          <div class="col">Critical dependencies</div>
-          <div class="col">Roadmap input, reserved bandwidth</div>
-          <div class="col price">€2k/mo</div>
+        <div class="tier-card">
+          <h3>Per-Release Sponsor</h3>
+          <p class="tier-price">€10,000<span>/release</span></p>
+          <p class="tier-for">Time-critical dependencies, one release at a time.</p>
+          <p class="tier-benefit">Prioritized PRs and features, credited in the release notes. One sponsor per release.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-secondary" target="_blank" rel="noopener">Get this tier &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Per-release sponsor</strong>
-            <span class="subtitle">Quarterly</span>
-          </div>
-          <div class="col">Time critical dependencies</div>
-          <div class="col">
-            Prioritized PRs/features, your name in release notes
-          </div>
-          <div class="col">
-            €10k/release
-            <br />
-            1 sponsor per release
-          </div>
-        </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Fast-lane</strong>
-            <span class="subtitle">Fix it fast</span>
-          </div>
-          <div class="col">Urgent blockers</div>
-          <div class="col">Guaranteed resolution in next release</div>
-          <div class="col price">€3k/issue</div>
+        <div class="tier-card">
+          <h3>Fast-Lane</h3>
+          <p class="tier-price">€3,000<span>/issue</span></p>
+          <p class="tier-for">One urgent blocker, handled outright.</p>
+          <p class="tier-benefit">Guaranteed resolution in the next release, no subscription required.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-secondary" target="_blank" rel="noopener">Get this tier &rarr;</a>
         </div>
       </div>
-      
-      <div class="buttons">
-        <a href="https://sales.theartofpostgresql.com/oss-sponsors/" class="btn btn-primary">Become a Supporter</a>
-      </div>
+      <p class="tier-note">Every tier is a support contract, not a
+      donation: the code stays open source and free to use at €0, and
+      what you're buying is a place in the queue. Annual invoicing and
+      purchase orders are available — <a href="https://sales.theartofpostgresql.com/oss-sponsors/" target="_blank" rel="noopener">start at the checkout</a> and say so.</p>
     </div>
   </div>
 </section>

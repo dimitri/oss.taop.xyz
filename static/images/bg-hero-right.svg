@@ -1,0 +1,27 @@
+<!-- Hero artwork, right — same geometry, gold instead of white, one opacity step up, so the two corners read as a matched pair rather than a repeat. Sibling to pgloader.io's schema-tree motif and
+     drawn to the same rules (340x300 viewBox, stroke-only geometry, three
+     opacity tiers) so the family reads as one hand — but a different
+     subject, because this site's subject is different: not a schema being
+     translated, a project being maintained. So: a mainline with two
+     branches merging back into it and a release tag at the end, which is
+     literally what the queue -> SLA -> quarterly release model does. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300" fill="none">
+  <g stroke="#c9a227" stroke-width="1.5" stroke-linecap="round" opacity="0.20">
+    <path d="M24 150 H300"/>
+    <path d="M86 150 C 106 150, 106 88, 126 88 H166 C 186 88, 186 150, 206 150"/>
+    <path d="M126 150 C 146 150, 146 212, 166 212 H206 C 226 212, 226 150, 246 150"/>
+  </g>
+  <g stroke="#c9a227" stroke-width="1.5" opacity="0.34">
+    <circle cx="46"  cy="150" r="8"/>
+    <circle cx="126" cy="88"  r="8"/>
+    <circle cx="166" cy="88"  r="8"/>
+    <circle cx="166" cy="212" r="8"/>
+    <circle cx="206" cy="212" r="8"/>
+    <circle cx="166" cy="150" r="8"/>
+    <rect x="278" y="132" width="44" height="36" rx="8"/>
+  </g>
+  <g fill="#c9a227" opacity="0.10">
+    <circle cx="166" cy="150" r="8"/>
+    <rect x="278" y="132" width="44" height="36" rx="8"/>
+  </g>
+</svg>

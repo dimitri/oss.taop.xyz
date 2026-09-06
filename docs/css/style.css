@@ -1660,34 +1660,29 @@ body.course .welcome_slider ul li {
   padding-top: 10px;
   border-top: 1px solid #464150;
 }
-.about_block ul {
+.about_block .social_links {
   font-size: 0;
   line-height: 0;
   padding-top: 10px;
 }
-.about_block ul li {
+.about_block .social_links li {
   padding-right: 10px;
   display: inline-block;
   vertical-align: bottom;
 }
-.about_block ul li a {
-  display: block;
+.about_block .social_links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 18px;
   height: 18px;
-  background: url(../images/blank.gif) center center no-repeat;
-  background-size: 18px auto;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.2s;
 }
-.about_block ul li a[href*='mailto'] {
-  background-image: url(../images/icons/email.png);
-}
-.about_block ul li a[href*='twitter'] {
-  background-image: url(../images/icons/twitter.png);
-}
-.about_block ul li a[href*='github'] {
-  background-image: url(../images/icons/github.png);
-}
-.about_block ul li a[href*='reddit'] {
-  background-image: url(../images/icons/reddit.png);
+.about_block .social_links li a:hover {
+  opacity: 1;
 }
 .faq_block {
   flex: 1;

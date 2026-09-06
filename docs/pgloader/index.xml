@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>pgloader - Database Migration Tool on Open Source Software Maintenance</title>
-		<link>https://oss.taop.xyz/pgloader/</link>
-		<description>Recent content in pgloader - Database Migration Tool on Open Source Software Maintenance</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-		
-			<atom:link href="https://oss.taop.xyz/pgloader/index.xml" rel="self" type="application/rss+xml" />
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgloader Maintenance and Priority Support on Open Source Software Maintenance</title><link>https://oss.theartofpostgresql.com/pgloader/</link><description>Recent content in pgloader Maintenance and Priority Support on Open Source Software Maintenance</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://oss.theartofpostgresql.com/pgloader/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
