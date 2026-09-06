@@ -42,61 +42,63 @@
 <section id="tiers" class="section section_what">
   <div class="wrapper">
     <div class="content">
-      <h2>Partner Tiers</h2>
-      <p class="subtitle">Choose the level that fits your business</p>
-      
-      <div class="pricing_table">
-        <div class="pricing_row header">
-          <div class="col">Tier</div>
-          <div class="col">Best for</div>
-          <div class="col">What you get</div>
-          <div class="col">Price</div>
+      {{/* Was the same four-column comparison table the pricing section
+           used, with one button under the whole thing. Same two problems:
+           the reader has to rank four rows themselves, and no individual
+           tier had a path to the checkout. Card per tier, one CTA each,
+           matching /#pricing so a reader who has seen one grid already
+           knows how to read this one.
+
+           Gold carries the badge rather than Platinum: Platinum is capped
+           at three firms and priced for enterprise-focused firms, so
+           recommending it to everyone would be recommending the tier most
+           readers cannot buy. Gold is the one most partners should land on.
+
+           Two columns, not three: these tiers carry a real inclusion list
+           each ("all Silver, plus…"), which needs the width. */}}
+      <h2 class="h-lead"><i class="fa-solid fa-handshake section-icon"></i>Partner Tiers</h2>
+      <p class="subtitle">Each tier includes everything in the one before it &mdash; pick the level of guarantee your client work needs</p>
+
+      <div class="tier-cards tier-cards-4">
+        <div class="tier-card">
+          <h3>Registered Partner</h3>
+          <p class="tier-price">&euro;0</p>
+          <p class="tier-for">For consultancies still evaluating the ecosystem.</p>
+          <p class="tier-benefit">A listing in the partner directory. Reserve the spot now; priority access opens as your needs grow.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-partner/" class="btn btn-secondary" target="_blank" rel="noopener">Get listed &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Registered Partner</strong>
-            <span class="subtitle">Listed Partners</span>
-          </div>
-          <div class="col">Consultancies exploring the ecosystem</div>
-          <div class="col">Directory listing — reserve your spot, priority access opens as your needs grow</div>
-          <div class="col price">€0</div>
+
+        <div class="tier-card">
+          <h3>Silver Partner</h3>
+          <p class="tier-price">&euro;6,000<span>/year</span></p>
+          <p class="tier-for">Small PostgreSQL consultancies delivering client projects.</p>
+          <p class="tier-benefit">Everything in Registered, plus early release notes, lead sharing, and a 48-hour issue triage SLA.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-partner/" class="btn btn-secondary" target="_blank" rel="noopener">Become a Silver Partner &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Silver Partner</strong>
-            <span class="subtitle">Stay ahead</span>
-          </div>
-          <div class="col">Small PostgreSQL consultancies</div>
-          <div class="col">Listed + early release notes + lead sharing + 48h issue triage SLA</div>
-          <div class="col price">€6k<br><span class="year">/ year</span></div>
+
+        <div class="tier-card tier-recommended">
+          <p class="tier-badge">Recommended</p>
+          <h3>Gold Partner</h3>
+          <p class="tier-price">&euro;15,000<span>/year</span></p>
+          <p class="tier-for">Established consultancies with PostgreSQL work on the critical path.</p>
+          <p class="tier-benefit">Everything in Silver, plus a guaranteed PR slot in the next release, roadmap input, and a quarterly async briefing.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-partner/" class="btn btn-primary" target="_blank" rel="noopener">Become a Gold Partner &rarr;</a>
         </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Gold Partner</strong>
-            <span class="subtitle">Deliver faster</span>
-          </div>
-          <div class="col">Established consultancies</div>
-          <div class="col">All Silver + guaranteed next-release PR slot + roadmap input + quarterly async briefing</div>
-          <div class="col price">€15k<br><span class="year">/ year</span></div>
-        </div>
-        
-        <div class="pricing_row">
-          <div class="col">
-            <strong>Platinum Partner</strong>
-            <span class="subtitle">Guarantee outcomes</span>
-          </div>
-          <div class="col">Enterprise-focused firms</div>
-          <div class="col">All Gold + reserved bandwidth (2 PRs + 2 issues/quarter) + co-marketing + one release sponsorship included</div>
-          <div class="col price">€48k<br><span class="year">/ year, paid quarterly</span><br><span class="seats">3 firms max</span></div>
-        </div>
-        
-        <div class="buttons">
-          <a href="https://sales.theartofpostgresql.com/oss-partner/" class="btn btn-primary">Become a Partner</a>
+
+        <div class="tier-card">
+          <p class="tier-badge tier-badge-scarce">3 firms max</p>
+          <h3>Platinum Partner</h3>
+          <p class="tier-price">&euro;48,000<span>/year, paid quarterly</span></p>
+          <p class="tier-for">Enterprise-focused firms that need to commit to outcomes.</p>
+          <p class="tier-benefit">Everything in Gold, plus reserved bandwidth &mdash; 2 PRs and 2 issues per quarter &mdash; co-marketing, and one release sponsorship included.</p>
+          <a href="https://sales.theartofpostgresql.com/oss-partner/" class="btn btn-secondary" target="_blank" rel="noopener">Enquire about Platinum &rarr;</a>
         </div>
       </div>
+      <p class="tier-note">Partner tiers are annual and sit alongside the
+      per-project <a href="/#pricing">maintenance tiers</a>: those buy
+      priority on one codebase, these buy it across all four plus the
+      directory listing and roadmap access your clients are really paying
+      you for.</p>
     </div>
   </div>
 </section>

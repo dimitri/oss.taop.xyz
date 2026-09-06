@@ -100,7 +100,17 @@ body.oss .section:not(.section_hero_dark):not(.section_cta) .content .subtitle {
    wins purely by being later in the cascade and repaints the hero's own
    lede ink-on-plum. Same reason the .subtitle and .hero-kicker rules
    below are guarded. */
-body.oss .section:not(.section_hero_dark):not(.section_cta) p {
+/* Direct children only. As a descendant selector this rule was
+   (0,4,2) — it outranked every component's own paragraph styling
+   (.tier-price, .cost-card p, .list-divided-item p, all of which sit at
+   (0,3,1)) and silently reset them to 16px body copy, which is how the
+   tier prices lost their display size. Section body copy is what this
+   rule is for, and section body copy is a direct child of .content; the
+   two wrapper divs that legitimately hold running prose are named
+   explicitly below rather than swept up by a descendant match. */
+body.oss .section:not(.section_hero_dark):not(.section_cta) .content > p,
+body.oss .section:not(.section_hero_dark):not(.section_cta) .two_col_text > p,
+body.oss .section:not(.section_hero_dark):not(.section_cta) .hero_columns > p {
   font: 400 16px/1.65 'Lato', sans-serif;
   color: var(--ink-soft);
 }
@@ -600,3 +610,19 @@ body.oss .ecosystem_card {
 }
 body.oss .ecosystem_card p { font: 400 13.5px/1.55 'Lato', sans-serif; color: var(--ink-soft); }
 body.oss .ecosystem_card i { transition: color .15s ease, background .15s ease; }
+
+/* Partner tiers: four of them, each carrying an "everything in X, plus…"
+   inclusion list. Three columns would wrap 3+1 and leave a lone card on
+   its own row; four across squeezes the inclusion lists to an unreadable
+   measure. Two columns holds both. */
+body.oss .section .tier-cards-4 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { body.oss .section .tier-cards-4 { grid-template-columns: 1fr; } }
+
+/* Scarcity, not recommendation: Platinum is capped at three firms, which
+   is a real constraint the reader should see on the card. Sky rather
+   than gold keeps it distinct from the recommended badge — gold means
+   "take this action", and a cap is information, not an instruction. */
+body.oss .section .tier-badge-scarce {
+  background: var(--sky);
+  color: #fff;
+}
