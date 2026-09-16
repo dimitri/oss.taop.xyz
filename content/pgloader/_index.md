@@ -111,6 +111,10 @@ description: "Funded maintenance for pgloader, the MySQL, SQLite and MS SQL Serv
       <p>Work is prioritized through one queue across all four projects,
       triaged against your tier&rsquo;s SLA, and shipped in quarterly
       releases &mdash; upstream, open source, for everyone.</p>
+      <p>Not looking to fund maintenance, but to run the migration
+      yourself? <a href="https://mysqltopgsql.com/course/" target="_blank" rel="noopener">Migrating
+      to PostgreSQL</a> is the course for that &mdash; 16 modules, six on the
+      method and five per source engine, with pgloader doing the data step.</p>
       <div class="buttons">
         <a href="/#pricing" class="btn btn-primary">See Pricing &amp; Tiers</a>
         <a href="/roadmap/#pgloader" class="btn btn-secondary">See This Project&rsquo;s Backlog</a>
